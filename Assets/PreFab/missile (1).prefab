@@ -255,7 +255,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee6b1a4edb162a240b1437933745a957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionEffect: {fileID: 0}
+  explosionEffect: {fileID: 7674132512071457015, guid: 890ccd8a807b93f4ba12e77a52113a30, type: 3}
   speed: 13
   rotateSpeed: 100
   ply: {fileID: 0}
