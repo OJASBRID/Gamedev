@@ -1125,6 +1125,7 @@ GameObject:
   - component: {fileID: 936200900}
   - component: {fileID: 936200901}
   - component: {fileID: 936200902}
+  - component: {fileID: 936200903}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -1178,7 +1179,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 936200896}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 01bd570777d4c8d40a87eb0098a431ff, type: 3}
   m_Name: 
@@ -1205,6 +1206,25 @@ MonoBehaviour:
   time: 10
   enemies:
   - {fileID: 4006210588608087367, guid: 2dd4e8d6d33336f4aacff29372995422, type: 3}
+--- !u!114 &936200903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936200896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cde81ab4d0e11e42920375de3ccfcae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 936200900}
+  move: {x: 0, y: 0}
+  moveSpeed: 10
+  movenote: {x: 0, y: 0}
+  nextpos: {x: 0, y: 0}
+  rotatespeed: 200
+  rotateamount: 0
 --- !u!1 &1182761531
 GameObject:
   m_ObjectHideFlags: 0
