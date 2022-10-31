@@ -11,15 +11,18 @@ public class HomingMissile : MonoBehaviour
     public GameObject explosionEffect;
     public float speed = 50f;
     public float rotateSpeed = 2500f;
-    public GameObject ply;
+    GameObject ply;
     private Rigidbody2D rb;
+     ParticleSystem ps;
 
     void Start()
     {
         // target = GameObject.FindGameObjectsWithTag("Player").Transform;
         rb = GetComponent<Rigidbody2D>();
         target = GameObject.Find("Square").GetComponent<Transform>();
-
+        ply = GameObject.Find("Plane");
+        ps = GameObject.FindGameObjectWithTag("ps").GetComponent<ParticleSystem>();
+        Debug.Log(ps.tag);
 
     }
 
@@ -43,8 +46,10 @@ public class HomingMissile : MonoBehaviour
 
     void OnTriggerEnter2D()
     {
+        
+        ps.Play();
         Destroy(ply);
-        Instantiate(explosionEffect, transform.position, transform.rotation);
+        
         Destroy(gameObject);
     }
 }

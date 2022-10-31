@@ -5,11 +5,11 @@ using UnityEngine;
 public class Bonus : MonoBehaviour
 {
     public int count;
-    MouseMovement ms;
+    Movement ms;
     // Start is called before the first frame update
     void Start()
     {
-        ms = GameObject.Find("Plane").GetComponent<MouseMovement>();
+        ms = GameObject.Find("Plane").GetComponent<Movement>();
         
     }
 

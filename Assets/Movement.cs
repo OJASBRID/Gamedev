@@ -23,6 +23,12 @@ public class Movement : MonoBehaviour
 
     public static bool PointerDown = false;
 
+    public int score;
+    public float pointIncrease;
+    float time = 0;
+    public float showscore;
+    public int count = 0;
+
     private void Start()
     {
         movenote.x = 0f;
@@ -47,13 +53,16 @@ public class Movement : MonoBehaviour
            
         }
 
+        time += Time.deltaTime;
+
     }
 
     private void FixedUpdate()
     {
-        
+        showscore = (time * pointIncrease);
+        score = (int)showscore + 10 * count;
 
-            rotateamount = Vector3.Cross(move.normalized, transform.up).z;
+        rotateamount = Vector3.Cross(move.normalized, transform.up).z;
             if (move.magnitude != 0)
             {
                 rb.angularVelocity = -(rotateamount * rotatespeed);
