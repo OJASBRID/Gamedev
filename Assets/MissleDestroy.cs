@@ -8,25 +8,25 @@ public class MissleDestroy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
         time += Time.deltaTime;
-        if(time>= 10f)
+        if (time >= 10f)
         {
             Destroy(gameObject);
             time = 0;
         }
     }
 
-    public void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (!collision.CompareTag("Respawn"))
-        {
-            Destroy(gameObject);    
-        }
-    }
+    // public void OnTriggerEnter2D(Collider2D collision)
+    // {
+    //     if (!collision.CompareTag("Respawn"))
+    //     {
+    //         Destroy(gameObject);    
+    //     }
+    // }
 }
