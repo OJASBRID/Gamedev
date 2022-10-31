@@ -28,7 +28,7 @@
                 {
                     "name": "",
                     "id": "2a92d676-4374-4eeb-8d9d-4fb85fa7b0b6",
-                    "path": "<Gamepad>/leftStick",
+                    "path": "<XInputController>/leftStick",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
